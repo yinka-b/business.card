@@ -1,0 +1,47 @@
+body {
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.avatar {
+    width: 150px;
+    border: 5px double #6C584C;
+    border-radius: 15px;
+    
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    animation: pulse 2s infinite;
+    }
+}
+
+.avatar:hover {
+        transform: scale(1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ADC178;
+    color: #6C584C;
+    border-bottom: 6px inset #DDE5B6;
+    border-top: 6px outset #DDE5B6;
+    border-radius: 20px;
+}
